@@ -1,0 +1,11 @@
+config_version: v1
+name: pg-vllm-agent
+version: 0.1.0
+description: PostgreSQL + vLLM data assistant
+
+entrypoint:
+  start: "python -m src.pg_vllm_agent"
+  # Optional healthcheck—useful for the control plane to confirm the agent is live.
+  healthcheck: "/health"
+
+# Python dependencies are installed automatically from pyproject.toml.

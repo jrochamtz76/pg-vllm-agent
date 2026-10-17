@@ -1,0 +1,8 @@
+[project]
+name = "pg-vllm-agent"
+version = "0.1.0"
+dependencies = [
+    "agentfield",
+    "asyncpg",
+    "pydantic",
+]
